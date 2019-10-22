@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class CustomerController extends Controller
 {
     public function list(){
-        $customers = [
+       /* $customers = [
             'fei',
             'mark',
             'simon',
@@ -16,6 +16,6 @@ class CustomerController extends Controller
 
         return view('internals.customers', [
             'customers' => $customers,
-        ]);
+        ]);*/
     }
 }

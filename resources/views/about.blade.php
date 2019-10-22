@@ -1,1 +1,5 @@
-<h1>about</h1>
+@extends('layout')
+
+@section('content')
+    <h1>about</h1>
+@endsection

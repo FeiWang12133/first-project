@@ -1,16 +1,21 @@
+@extends('layout')
 
-<h1>customer</h1>
-<ul>
+@section('content')
 
-<!--  same with below  --><?php
-//        foreach ($customers as $customer){
-//            echo '<h2>' . $customer . '</h2>';
-//        }
-//    ?>
+    <h1>customer</h1>
+    <ul>
 
-    @foreach ($customers as $customer)
-        <li>{{ $customer }}</li>
-    @endforeach
+        <!--  same with below  --><?php
+        //        foreach ($customers as $customer){
+        //            echo '<h2>' . $customer . '</h2>';
+        //        }
+        //    ?>
 
-</ul>
+        @foreach ($customers as $customer)
+            <li>{{ $customer }}</li>
+        @endforeach
+
+    </ul>
+
+@endsection
 
