@@ -17,7 +17,7 @@ Route::view('/', 'welcome');
 Route::view('contact-us', 'contact');
 Route::view('about', 'about');
 
-
+Route::post('customers', 'CustomerController@store');
 #pass data
 Route::get('customers', 'CustomerController@list');
 
