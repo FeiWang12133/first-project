@@ -19,7 +19,9 @@ Route::view('about', 'about');
 
 Route::post('customers', 'CustomerController@store');
 #pass data
-Route::get('customers', 'CustomerController@list');
+Route::get('customers', 'CustomerController@index');
+
+Route::get('customers/create', 'CustomerController@create');
 
 /*
  * same way with above

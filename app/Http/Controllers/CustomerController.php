@@ -2,39 +2,38 @@
 
 
 namespace App\Http\Controllers;
-use \App\Customer;
+use App\Company;
+use App\Customer;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
-    public function list(){
-        $activeCustomers = Customer::where('active', 1)->get();
-        $inactiveCustomers = Customer::where('active', 0)->get();
+    public function index(){
+        $activeCustomers = Customer::active()->get();
+        $inactiveCustomers = Customer::inactive()->get();
 
 
-        /*$customers = Customer::all();*/
+        return view('customers.index', compact('activeCustomers', 'inactiveCustomers'));
 
- /*       return view('internals.customers', [
-            //'customers' => $customers,
-            'activeCustomers' => $activeCustomers,
-            'inactiveCustomers' => $inactiveCustomers,
-        ]);*/
-        return view('internals.customers', compact('activeCustomers', 'inactiveCustomers'));
+         }
+
+    public function create(){
+
+        $companies = Company::all();
+
+        return view('customers.create', compact('companies'));
     }
-
     public function store(){
 
+        //pass data to create methood below
         $data = request()->validate([
             'name' => 'required| min:3',
             'email' => 'required|email',
             'active' => 'required',
+            'company_id' => 'required',
         ]);
 
-        $customer = new Customer();
-        $customer->name=request('name');
-        $customer->email=request('email');
-        $customer->active=request('active');
-        $customer->save();
+        Customer::create($data);
 
         return back();
     }
