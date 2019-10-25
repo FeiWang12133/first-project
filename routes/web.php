@@ -17,11 +17,15 @@ Route::view('/', 'welcome');
 Route::view('contact-us', 'contact');
 Route::view('about', 'about');
 
-Route::post('customers', 'CustomerController@store');
-#pass data
-Route::get('customers', 'CustomerController@index');
 
 Route::get('customers/create', 'CustomerController@create');
+
+Route::get('customers', 'CustomerController@index');
+
+Route::post('customers', 'CustomerController@store');
+#pass data
+
+
 
 /*
  * same way with above

@@ -34,19 +34,21 @@
         </ul>
     </div>
     </div>
-    <div class="row">
+
+    <div class="=row">
         <div class="col-12">
             @foreach($companies as $company)
-                <h3>{{ $company->name }}</h3>
+                <h3>{{ $company->$name }}</h3>
 
                 <ul>
-                    @foreach($company->customers as $customer)
+                    @foreach($companies->customers as $customer)
                         <li>{{ $customer->name }}</li>
-                    @endforeach
+                        @endforeach
                 </ul>
             @endforeach
         </div>
     </div>
+
 
 
 
