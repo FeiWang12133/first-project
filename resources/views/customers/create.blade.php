@@ -1,16 +1,15 @@
 @extends('layout')
-@section('title','add new')
-
+@section('title')
+    new List
+@endsection
 
 @section('content')
-<div class="row">
-    <div class="col-12">
+
     <h1>new customer</h1>
-    </div>
-</div>
-<div class="row">
-    <div class="col-12">
-    <form action="/customers" method="POST">
+
+    <form action="customers" method="POST">
+        @csrf
+
         <div class = "form-group" >
             <label for="name">Name</label>
             <label>
@@ -48,11 +47,10 @@
         <button type="submit" class="btn btn-primary">
             Add customer
         </button>
-        @csrf
+
     </form>
 
-    </div>
-</div>
+
 
 
 @endsection
