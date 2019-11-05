@@ -16,17 +16,21 @@
 Route::view('/', 'welcome');
 Route::view('contact-us', 'contact');
 Route::view('about', 'about');
+<<<<<<< HEAD
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('customers/create', 'CustomerController@create');
 
 Route::get('customers', 'CustomerController@index');
+=======
+>>>>>>> parent of 5afe1bf... stock at create
 
 Route::post('customers', 'CustomerController@store');
 #pass data
+Route::get('customers', 'CustomerController@index');
 
-
+Route::get('customers/create', 'CustomerController@create');
 
 /*
  * same way with above

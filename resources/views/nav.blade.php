@@ -1,4 +1,5 @@
 <ul class="nav py-3">
+<<<<<<< HEAD
     <li class="nav-item">
         <a class="nav-link" href="/">Home</a>
     </li>
@@ -12,6 +13,21 @@
         <a class="nav-link" href="/customers">Customers List</a>
     </li>
      {{--   <p>{{$username}}</p>--}}
+=======
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact-us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="customers">Customers List</a>
+        </li>
+        {{--<p>{{$username}}</p>--}}
+>>>>>>> parent of 5afe1bf... stock at create
     </ul>
 
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
