@@ -147,7 +147,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testfile" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> parent of 5afe1bf... stock at create
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 >>>>>>> parent of 5afe1bf... stock at create
@@ -219,8 +223,12 @@
       <workItem from="1571744435916" duration="10330000" />
       <workItem from="1571761798699" duration="11764000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1571913955571" duration="17281000" />
       <workItem from="1572963144685" duration="6017000" />
+=======
+      <workItem from="1571913955571" duration="9879000" />
+>>>>>>> parent of 5afe1bf... stock at create
 =======
       <workItem from="1571913955571" duration="9879000" />
 >>>>>>> parent of 5afe1bf... stock at create

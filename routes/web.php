@@ -17,12 +17,15 @@ Route::view('/', 'welcome');
 Route::view('contact-us', 'contact');
 Route::view('about', 'about');
 <<<<<<< HEAD
+<<<<<<< HEAD
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('customers/create', 'CustomerController@create');
 
 Route::get('customers', 'CustomerController@index');
+=======
+>>>>>>> parent of 5afe1bf... stock at create
 =======
 >>>>>>> parent of 5afe1bf... stock at create
 
